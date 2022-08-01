@@ -65,5 +65,3 @@ const newUsers = await userRepository.find({ isActive: true });
 Data Mapper 更像是一层拦在操作者与实际数据之间的访问层，再进行数据的操作。
 
 对这两个模式进行比较，很容易发现 Active Record 模式要简单的多，而 Data Mapper 模式则更加严谨。那么何时使用这两种模式就很清楚了，如果你在开发比较简单的应用，直接使用 Active Record 模式就好了，因为这确实会减少很多代码。但是如果你在开发规模较大的应用，使用 Data Mapper 模式则能够帮助你更好的维护代码（实体类不再具有访问数据库权限了，只能通过统一的接口(getRepository getManager 等)）
-
-TODO: continue to learn relation

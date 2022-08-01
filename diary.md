@@ -19,3 +19,5 @@ in a manyToOne relation, foreign key is usuallt on the `many` side, not on the `
 there is no `join`, but there is a new column after config relation
 
 NOTE: stop here and learn more about relation in orm
+
+(TODO) right now, I just rote learning about how to write relation. Cannot understan WHY...
