@@ -66,3 +66,27 @@ class Person {
 ```
 
 you can use `Object.defineProperty()` to customize the property.
+
+# Create Method Decorators
+
+```ts
+const enumerable = (value: boolean) => {
+    return (
+        target: any,
+        memberName: string,
+        propertyDescriptor: PropertyDescriptor
+    ) => {
+        propertyDescriptor.enumerable = value;
+    };
+};
+
+class Person {
+    firstName: string = 'Jon';
+    lastName: string = 'Doe';
+
+    @enumerable(true)
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+```

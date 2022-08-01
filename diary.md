@@ -6,7 +6,7 @@ make a docker-compose.yml and create a new container.
 
 NOTE: in typeorm, entity is like a table in sql
 
-(TODO) learn decorator in js
+(DONE) learn decorator in js
 
 (TODO) difference between `PrimaryGenerateColumn` and `PrimaryColumn`??
 
@@ -21,3 +21,5 @@ there is no `join`, but there is a new column after config relation
 NOTE: stop here and learn more about relation in orm
 
 (TODO) right now, I just rote learning about how to write relation. Cannot understan WHY...
+
+need to learn how typeorm implements relation.

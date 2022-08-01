@@ -6,7 +6,9 @@ import {
     CreateDateColumn,
     UpdateDateColumn,
     OneToMany,
+    ManyToMany,
 } from 'typeorm';
+import { Banker } from './Banker';
 import { Transaction } from './Transaction';
 import { Person } from './utils/Person';
 
@@ -37,6 +39,9 @@ export class Client extends Person {
 
     @OneToMany(() => Transaction, (transaction) => transaction.client)
     transactions: Transaction[];
+
+    @ManyToMany(() => Banker)
+    bankers: Banker[];
 
     @CreateDateColumn()
     created_at: Date;
