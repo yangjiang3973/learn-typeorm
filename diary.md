@@ -20,6 +20,8 @@ there is no `join`, but there is a new column after config relation
 
 NOTE: stop here and learn more about relation in orm
 
-(TODO) right now, I just rote learning about how to write relation. Cannot understan WHY...
+(TODO) right now, I learn about how to write relation by rote. Cannot understand WHY...
 
 need to learn how typeorm implements relation.
+
+(TODO) concept of `cascade`, especially when deleting a foreign key
